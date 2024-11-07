@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN DIGITAL PLATFORM</title>
+    <link rel="stylesheet" href="modul1.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bahan/logo.png" alt="Logo Perpustakaan">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Modul <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="modul1.html">Modul 1</a></li>
+                    <li><a href="modul2.html">Modul 2</a></li>
+                    <li><a href="modul3.html">Modul 3</a></li>
+                    <li><a href="modul4.html">Modul 4</a></li>
+                    <li><a href="modul5.html">Modul 5</a></li>
+                    <li><a href="modul6.html">Modul 6</a></li>
+                    <li><a href="modul7.html">Modul 7</a></li>
+                    <li><a href="modul8.html">Modul 8</a></li>
+                </ul>
+            </li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <!-- Perpustakaan Links Section -->
+        <section class="library-links">
+            <h2>Perpustakaan Partner</h2>
+            <div class="library-grid">
+                <div class="library-card">
+                    <img src="bahan/perpusnas.jpeg" alt="Perpustakaan Nasional">
+                    <h3>Perpustakaan Nasional RI</h3>
+                    <p>Perpustakaan Nasional Republik Indonesia - Jakarta</p>
+                    <a href="https://www.perpusnas.go.id" class="library-link" target="_blank">Kunjungi</a>
+                </div>
+                <div class="library-card">
+                    <img src="bahan/pemko.jpeg" alt="Perpustakaan Daerah Kota Medan">
+                    <h3>Perpustakaan Daerah</h3>
+                    <p>Perpustakaan Daerah Provinsi</p>
+                    <a href="https://disperpustakaanarsip.pemkomedan.go.id/" class="library-link">Kunjungi</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section">
+            <h2>Media Perpustakaan</h2>
+            
+            <!-- Video Tour -->
+            <div class="media-container">
+                <h3>Virtual Tour Perpustakaan</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AcfM9Z9MbXI?si=R9_G0Axa3pcazeGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <!-- Audio Guide -->
+            <div class="media-container audio-container">
+                <h3><i class="fas fa-headphones-alt"></i> Panduan Audio Perpustakaan</h3>
+                <div class="custom-audio-player">
+                    <div class="audio-info">
+                        <div class="audio-title">Panduan Penggunaan Perpustakaan Digital</div>
+                        <div class="audio-duration">00:00 / 00:00</div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="audio-controls">
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="volume-container">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" class="volume-slider" min="0" max="100" value="100">
+                        </div>
+                    </div>
+                    <!-- Pindahkan audio element ke sini dan tambahkan controls sebagai fallback -->
+                    <audio id="audio-element" preload="metadata">
+                        <source src="bahan/usu.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- HTML5 Features Section -->
+        <section class="html5-features">
+            <h2>Kelebihan HTML5 dalam Website Perpustakaan</h2>
+            <div class="features-container">
+                <div class="feature-item">
+                    <h3>1. Semantic Elements</h3>
+                    <p>HTML5 menyediakan elemen semantik seperti &lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;article&gt;, dan &lt;footer&gt; yang membuat struktur website lebih jelas dan SEO-friendly.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>2. Native Multimedia Support</h3>
+                    <p>Dukungan langsung untuk audio dan video tanpa plugin tambahan, seperti yang diimplementasikan dalam virtual tour perpustakaan.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>3. Responsive Design</h3>
+                    <p>HTML5 mendukung desain responsif yang memungkinkan website perpustakaan dapat diakses dengan baik di berbagai perangkat.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Perpustakaan Digital Platform. All Rights Reserved.</p>
+        </div>
+    </footer>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN DIGITAL PLATFORM</title>
+    <link rel="stylesheet" href="modul5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bahan/logo.png" alt="Logo Perpustakaan">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Modul <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="modul1.html">Modul 1</a></li>
+                    <li><a href="modul2.html">Modul 2</a></li>
+                    <li><a href="modul3.html">Modul 3</a></li>
+                    <li><a href="modul4.html">Modul 4</a></li>
+                    <li><a href="modul5.html">Modul 5</a></li>
+                    <li><a href="modul6.html">Modul 6</a></li>
+                    <li><a href="modul7.html">Modul 7</a></li>
+                    <li><a href="modul8.html">Modul 8</a></li>
+                </ul>
+            </li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+        </ul>
+    </nav>
+
+    <section class="content-section">
+        <h1>JavaScript Demo - Perpustakaan Digital</h1>
+        
+        <!-- 1. Menampilkan Data dengan innerHTML -->
+        <div class="demo-box">
+            <h2>1. Menampilkan Data dengan innerHTML</h2>
+            <div id="dataDisplay1"></div>
+            <button onclick="showData1()">Tampilkan Data</button>
+        </div>
+
+        <!-- 2. Menampilkan Data dengan document.write() -->
+        <div class="demo-box">
+            <h2>2. Menampilkan Data dengan document.write()</h2>
+            <div id="dataDisplay2"></div>
+            <button onclick="showData2()">Tampilkan Data</button>
+        </div>
+
+        <!-- 3. Menampilkan Data dengan alert() -->
+        <div class="demo-box">
+            <h2>3. Menampilkan Data dengan alert()</h2>
+            <button onclick="showData3()">Tampilkan Data</button>
+        </div>
+
+        <!-- Implementasi Variabel, Operator, Kondisi, dan Perulangan -->
+        <div class="demo-box">
+            <h2>Kalkulator Denda Perpustakaan</h2>
+            <input type="number" id="hariTerlambat" placeholder="Jumlah hari terlambat">
+            <button onclick="hitungDenda()">Hitung Denda</button>
+            <div id="hasilDenda"></div>
+        </div>
+
+        <!-- DOM Event - Pameran Buku -->
+        <div class="demo-box">
+            <h2>Pameran Buku</h2>
+            <button onclick="togglePameran()">Tampilkan Pameran Buku</button>
+            <div id="pameranBuku" class="book-exhibition" style="display: none;">
+                <!-- Buku 1 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/resep.jpg" alt="Buku Resep">
+                    <div class="book-details">
+                        <h3>Resep Masakan Nusantara</h3>
+                        <p>Penulis: Chef John Doe</p>
+                        <p>Genre: Kuliner</p>
+                        <p>Tahun: 2023</p>
+                    </div>
+                </div>
+
+                <!-- Buku 2 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/editing.jpg" alt="Buku Editing">
+                    <div class="book-details">
+                        <h3>Panduan Video Editing</h3>
+                        <p>Penulis: Jane Smith</p>
+                        <p>Genre: Tutorial</p>
+                        <p>Tahun: 2024</p>
+                    </div>
+                </div>
+
+                <!-- Buku 3 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/berpikir.jpg" alt="Buku Berpikir">
+                    <div class="book-details">
+                        <h3>Cara Berpikir Kritis</h3>
+                        <p>Penulis: Dr. Alex Johnson</p>
+                        <p>Genre: Pengembangan Diri</p>
+                        <p>Tahun: 2024</p>
+                    </div>
+                </div>
+
+                <!-- Buku 4 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/fakta.jpg" alt="fakta">
+                    <div class="book-details">
+                        <h3>Fakta-Fakta Mencengangkan ( Niaga )</h3>
+                        <p>Penulis: Sarah Wilson</p>
+                        <p>Genre: Novel</p>
+                        <p>Tahun: 2023</p>
+                    </div>
+                </div>
+
+                <!-- Buku 5 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/10.jpg" alt="10 JALAN MEMAHAMI DIRI SENDIRI">
+                    <div class="book-details">
+                        <h3>10 JALAN MEMAHAMI DIRI SENDIRI</h3>
+                        <p>Penulis: Tech Master</p>
+                        <p>Genre: Teknologi</p>
+                        <p>Tahun: 2024</p>
+                    </div>
+                </div>
+
+                <!-- Buku 6 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/21.jpg" alt="21 Wanita Perkasa yang ditempa oleh Budaya Aceh">
+                    <div class="book-details">
+                        <h3>21 Wanita Perkasa yang ditempa oleh Budaya Aceh</h3>
+                        <p>Penulis: Robert Brown</p>
+                        <p>Genre: Bisnis</p>
+                        <p>Tahun: 2024</p>
+                    </div>
+                </div>
+
+                <!-- Buku 7 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/ada.jpg" alt="palung Hatiku">
+                    <div class="book-details">
+                        <h3>Ada Sebuah Palung di Hatiku</h3>
+                        <p>Penulis: Prof. Ahmad</p>
+                        <p>Genre: Sejarah</p>
+                        <p>Tahun: 2023</p>
+                    </div>
+                </div>
+
+                <!-- Buku 8 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/sains.jpg" alt="Buku Sains">
+                    <div class="book-details">
+                        <h3>Sukses Juara Olimpiade Sains</h3>
+                        <p>Penulis: Dr. Emily Chen</p>
+                        <p>Genre: Sains</p>
+                        <p>Tahun: 2024</p>
+                    </div>
+                </div>
+
+                <!-- Buku 9 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/99.jpg" alt="Buku Psikologi">
+                    <div class="book-details">
+                        <h3>99 Quotes Rasul</h3>
+                        <p>Penulis: Dr. Maria Garcia</p>
+                        <p>Genre: Psikologi</p>
+                        <p>Tahun: 2023</p>
+                    </div>
+                </div>
+
+                <!-- Buku 10 -->
+                <div class="book-card" onmouseover="showBookDetails(this)" onmouseout="hideBookDetails(this)">
+                    <img src="bahan/hamka.jpg" alt="Buku Motivasi">
+                    <div class="book-details">
+                        <h3>Hamka From A to Z</h3>
+                        <p>Penulis: Michael Success</p>
+                        <p>Genre: Motivasi</p>
+                        <p>Tahun: 2024</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // 1. Menampilkan data dengan innerHTML
+        function showData1() {
+            const books = ['Harry Potter', 'Lord of the Rings', 'The Hobbit'];
+            let output = '<ul>';
+            for(let book of books) {
+                output += `<li>${book}</li>`;
+            }
+            output += '</ul>';
+            document.getElementById('dataDisplay1').innerHTML = output;
+        }
+
+        // 2. Menampilkan data dengan document.write()
+        function showData2() {
+            const targetDiv = document.getElementById('dataDisplay2');
+            targetDiv.innerHTML = '';
+            const iframe = document.createElement('iframe');
+            iframe.style.width = '100%';
+            iframe.style.height = '100px';
+            targetDiv.appendChild(iframe);
+            iframe.contentDocument.write('<h3>Daftar Kategori Buku:</h3>');
+            iframe.contentDocument.write('1. Fiksi<br>2. Non-Fiksi<br>3. Pendidikan');
+        }
+
+        // 3. Menampilkan data dengan alert()
+        function showData3() {
+            alert('Selamat datang di Perpustakaan Digital!\nJam operasional: 08.00 - 16.00');
+        }
+
+        // Implementasi variabel, operator, kondisi, dan perulangan
+        function hitungDenda() {
+            const dendaPerHari = 2000;
+            const hariTerlambat = parseInt(document.getElementById('hariTerlambat').value);
+            let totalDenda = 0;
+
+            // Menggunakan kondisi
+            if (hariTerlambat <= 0) {
+                document.getElementById('hasilDenda').innerHTML = 'Tidak ada denda';
+                return;
+            }
+
+            // Menggunakan perulangan dan operator
+            for (let i = 1; i <= hariTerlambat; i++) {
+                totalDenda += dendaPerHari;
+            }
+
+            document.getElementById('hasilDenda').innerHTML = 
+                `Total denda: Rp ${totalDenda.toLocaleString('id-ID')}`;
+        }
+
+        // Fungsi untuk toggle pameran buku
+        function togglePameran() {
+            const pameran = document.getElementById('pameranBuku');
+            const button = event.target;
+            
+            if (pameran.style.display === 'none') {
+                pameran.style.display = 'grid';
+                button.textContent = 'Sembunyikan Pameran Buku';
+                pameran.style.animation = 'fadeIn 0.5s ease';
+            } else {
+                pameran.style.display = 'none';
+                button.textContent = 'Tampilkan Pameran Buku';
+            }
+        }
+
+        // DOM Events untuk Pameran Buku
+        function showBookDetails(element) {
+            const details = element.querySelector('.book-details');
+            details.style.opacity = '1';
+            details.style.transform = 'translateY(0)';
+        }
+
+        function hideBookDetails(element) {
+            const details = element.querySelector('.book-details');
+            details.style.opacity = '0';
+            details.style.transform = 'translateY(20px)';
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Perpustakaan Digital Platform. All Rights Reserved.</p>
+        </div>
+    </footer>

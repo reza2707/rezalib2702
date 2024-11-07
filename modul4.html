@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN DIGITAL PLATFORM</title>
+    <link rel="stylesheet" href="modul4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bahan/logo.png" alt="Logo Perpustakaan">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Modul <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="modul1.html">Modul 1</a></li>
+                    <li><a href="modul2.html">Modul 2</a></li>
+                    <li><a href="modul3.html">Modul 3</a></li>
+                    <li><a href="modul4.html">Modul 4</a></li>
+                    <li><a href="modul5.html">Modul 5</a></li>
+                    <li><a href="modul6.html">Modul 6</a></li>
+                    <li><a href="modul7.html">Modul 7</a></li>
+                    <li><a href="modul8.html">Modul 8</a></li>
+                </ul>
+            </li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+        </ul>
+    </nav>
+
+    <section class="three-column-section">
+        <div class="column">
+            <div class="welcome-box">
+                <h2>Selamat Datang</h2>
+                <h3>di Website Perpustakaan</h3>
+                <h1>SUKA BACA</h1>
+            </div>
+        </div>
+        
+        <div class="column">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Buku</th>
+                        <th>Pengarang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Laskar Pelangi</td>
+                        <td>Andrea Hirata</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Bumi Manusia</td>
+                        <td>Pramoedya Ananta Toer</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Dilan 1990</td>
+                        <td>Pidi Baiq</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="column">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Perpustakaan Digital Platform. All Rights Reserved.</p>
+        </div>
+    </footer>

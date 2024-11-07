@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN DIGITAL PLATFORM</title>
+    <link rel="stylesheet" href="koleksi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bahan/logo.png" alt="Logo Perpustakaan">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Modul <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="modul1.html">Modul 1</a></li>
+                    <li><a href="modul2.html">Modul 2</a></li>
+                    <li><a href="modul3.html">Modul 3</a></li>
+                    <li><a href="modul4.html">Modul 4</a></li>
+                    <li><a href="modul5.html">Modul 5</a></li>
+                    <li><a href="modul6.html">Modul 6</a></li>
+                    <li><a href="modul7.html">Modul 7</a></li>
+                    <li><a href="modul8.html">Modul 8</a></li>
+                </ul>
+            </li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+        </ul>
+    </nav>
+
+    <section class="collection-section">
+        <div class="container">
+            <h1 class="section-title">Koleksi Buku</h1>
+
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Cari buku...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Semua</button>
+                    <button class="filter-btn" data-filter="novel">Novel</button>
+                    <button class="filter-btn" data-filter="education">Pendidikan</button>
+                    <button class="filter-btn" data-filter="technology">Teknologi</button>
+                </div>
+            </div>
+
+            <!-- Book Grid -->
+            <div class="book-grid">
+                <!-- Novel -->
+                <div class="book-card" data-category="novel">
+                    <div class="book-image">
+                        <img src="bahan/buku1.jpeg" alt="Novel 1">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Bumi</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Novel</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="novel">
+                    <div class="book-image">
+                        <img src="bahan/buku2.jpeg" alt="Novel 2">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Bulan</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Novel</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="novel">
+                    <div class="book-image">
+                        <img src="bahan/buku3.jpeg" alt="Novel 3">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Matahari</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Novel</p>
+                    </div>
+                </div>
+
+                <!-- Pendidikan -->
+                <div class="book-card" data-category="education">
+                    <div class="book-image">
+                        <img src="bahan/buku4.jpeg" alt="Education Book 1">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Bintang</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Pendidikan</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="education">
+                    <div class="book-image">
+                        <img src="bahan/buku5.jpeg" alt="Education Book 2">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Komet</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Pendidikan</p>
+                    </div>
+                </div>
+
+                <!-- Teknologi -->
+                <div class="book-card" data-category="technology">
+                    <div class="book-image">
+                        <img src="bahan/buku6.jpeg" alt="Technology Book 1">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Komet Minor</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Teknologi</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="technology">
+                    <div class="book-image">
+                        <img src="bahan/buku7.jpeg" alt="Technology Book 2">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Selena</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Teknologi</p>
+                    </div>
+                </div>
+
+                <div class="book-card" data-category="technology">
+                    <div class="book-image">
+                        <img src="bahan/buku8.jpeg" alt="Technology Book 3">
+                        <div class="book-overlay">
+                            <button class="detail-btn">Detail</button>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3>Nebula</h3>
+                        <p class="author">Tere Liye</p>
+                        <p class="category">Teknologi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Detail Modal -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="book-detail-image">
+                    <img src="" alt="Book Cover" id="modalBookImage">
+                </div>
+                <div class="book-detail-info">
+                    <h2 id="modalBookTitle"></h2>
+                    <p id="modalBookAuthor"></p>
+                    <p id="modalBookCategory"></p>
+                    <p id="modalBookDescription"></p>
+                    <div class="book-availability">
+                        <span class="status available">Tersedia</span>
+                        <button class="borrow-btn">Pinjam Buku</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Perpustakaan Digital Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="koleksi.js"></script>
+</body>
+</html>

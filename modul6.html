@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN DIGITAL PLATFORM</title>
+    <link rel="stylesheet" href="modul6.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bahan/logo.png" alt="Logo Perpustakaan">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Modul <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="modul1.html">Modul 1</a></li>
+                    <li><a href="modul2.html">Modul 2</a></li>
+                    <li><a href="modul3.html">Modul 3</a></li>
+                    <li><a href="modul4.html">Modul 4</a></li>
+                    <li><a href="modul5.html">Modul 5</a></li>
+                    <li><a href="modul6.html">Modul 6</a></li>
+                    <li><a href="modul7.html">Modul 7</a></li>
+                    <li><a href="modul8.html">Modul 8</a></li>
+                </ul>
+            </li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-section">
+        <h1>Perpustakaan Digital - jQuery Demo</h1>
+
+        <!-- Tabs menggunakan jQuery UI -->
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Pencarian Buku</a></li>
+                <li><a href="#tabs-2">Katalog Buku</a></li>
+                <li><a href="#tabs-3">Form Peminjaman</a></li>
+            </ul>
+
+            <!-- Tab 1: Pencarian Buku -->
+            <div id="tabs-1">
+                <div class="search-section">
+                    <input type="text" id="searchBook" placeholder="Cari buku...">
+                    <div id="searchResults"></div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Katalog Buku dengan Slick Carousel -->
+            <div id="tabs-2">
+                <div class="book-carousel">
+                    <div class="book-item">
+                        <img src="bahan/resep.jpg" alt="Buku Resep">
+                        <h3>Resep Masakan Nusantara</h3>
+                    </div>
+                    <div class="book-item">
+                        <img src="bahan/editing.jpg" alt="Buku Editing">
+                        <h3>Panduan Video Editing</h3>
+                    </div>
+                    <div class="book-item">
+                        <img src="bahan/berpikir.jpg" alt="Buku Berpikir">
+                        <h3>Cara Berpikir Kritis</h3>
+                    </div>
+                    <div class="book-item">
+                        <img src="bahan/novel.jpg" alt="Novel">
+                        <h3>Kisah Sang Pejuang</h3>
+                    </div>
+                    <div class="book-item">
+                        <img src="bahan/teknologi.jpg" alt="Buku Teknologi">
+                        <h3>Teknologi Modern</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Form Peminjaman dengan jQuery UI Widgets -->
+            <div id="tabs-3">
+                <form id="loanForm">
+                    <div class="form-group">
+                        <label for="memberName">Nama Peminjam:</label>
+                        <input type="text" id="memberName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookTitle">Judul Buku:</label>
+                        <input type="text" id="bookTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loanDate">Tanggal Pinjam:</label>
+                        <input type="text" id="loanDate" class="datepicker" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Ajukan Peminjaman</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Dialog untuk konfirmasi peminjaman -->
+        <div id="dialog-confirm" title="Konfirmasi Peminjaman" style="display: none;">
+            <p>
+                <span class="ui-icon ui-icon-alert" style="float:left; margin:12px 12px 20px 0;"></span>
+                Apakah data peminjaman sudah benar?
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Perpustakaan Digital Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery and Plugin Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="jquery.js"></script>
+</body>
+</html>

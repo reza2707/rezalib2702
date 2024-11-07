@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERPUSTAKAAN DIGITAL PLATFORM</title>
+    <link rel="stylesheet" href="modul2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="bahan/logo.png" alt="Logo Perpustakaan">
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Modul <i class="fas fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="modul1.html">Modul 1</a></li>
+                    <li><a href="modul2.html">Modul 2</a></li>
+                    <li><a href="modul3.html">Modul 3</a></li>
+                    <li><a href="modul4.html">Modul 4</a></li>
+                    <li><a href="modul5.html">Modul 5</a></li>
+                    <li><a href="modul6.html">Modul 6</a></li>
+                    <li><a href="modul7.html">Modul 7</a></li>
+                    <li><a href="modul8.html">Modul 8</a></li>
+                </ul>
+            </li>
+            <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="koleksi.html">Koleksi Buku</a></li>
+        </ul>
+    </nav>
+
+    <section class="forms-container">
+        <!-- Form Anggota -->
+        <div class="form-section registration">
+            <div class="form-header">
+                <h2>Formulir Anggota Perpustakaan</h2>
+                <h3>Program Studi Perpustakaan dan Sains Informasi</h3>
+            </div>
+            
+            <form class="registration-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="nim">NIM:</label>
+                        <input type="text" id="nim" name="nim" placeholder="Masukkan NIM" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat:</label>
+                    <textarea id="alamat" name="alamat" placeholder="Masukkan alamat lengkap" required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div class="radio-group">
+                            <div class="radio-item">
+                                <input type="radio" id="pria" name="gender" value="pria">
+                                <label for="pria">Pria</label>
+                            </div>
+                            <div class="radio-item">
+                                <input type="radio" id="wanita" name="gender" value="wanita">
+                                <label for="wanita">Wanita</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">No HP:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="08xxxxxxxxxx" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tempat-lahir">Tempat Lahir:</label>
+                        <input type="text" id="tempat-lahir" name="tempat-lahir" placeholder="Kota kelahiran" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tanggal-lahir">Tanggal Lahir:</label>
+                        <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Daftar</button>
+            </form>
+        </div>
+
+        <!-- Tabel Bahan Buku -->
+        <div class="book-section">
+            <div class="form-header">
+                <h2>Daftar Bahan Buku</h2>
+            </div>
+            <div class="table-container">
+                <table class="book-table">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Kode Buku</th>
+                            <th>Judul Buku</th>
+                            <th>Pengarang</th>
+                            <th>Tahun Terbit</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>PW-2023-001</td>
+                            <td>Pemrograman Web Dasar</td>
+                            <td>John Doe</td>
+                            <td>2023</td>
+                            <td><span class="status available">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>DB-2023-002</td>
+                            <td>Database Management System</td>
+                            <td>Jane Smith</td>
+                            <td>2023</td>
+                            <td><span class="status borrowed">Dipinjam</span></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>JS-2023-003</td>
+                            <td>JavaScript Modern</td>
+                            <td>David Wilson</td>
+                            <td>2023</td>
+                            <td><span class="status available">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>PY-2023-004</td>
+                            <td>Python untuk Data Science</td>
+                            <td>Sarah Johnson</td>
+                            <td>2023</td>
+                            <td><span class="status available">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>AI-2023-005</td>
+                            <td>Artificial Intelligence Basics</td>
+                            <td>Michael Brown</td>
+                            <td>2023</td>
+                            <td><span class="status borrowed">Dipinjam</span></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>ML-2023-006</td>
+                            <td>Machine Learning Fundamental</td>
+                            <td>Emily Davis</td>
+                            <td>2023</td>
+                            <td><span class="status available">Tersedia</span></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>CS-2023-007</td>
+                            <td>Cyber Security Essential</td>
+                            <td>Robert Taylor</td>
+                            <td>2023</td>
+                            <td><span class="status maintenance">Perbaikan</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Form Pemesanan Buku -->
+        <div class="form-section booking">
+            <div class="form-header">
+                <h2>Form Pemesanan Buku</h2>
+            </div>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label for="judul-buku">Judul Buku:</label>
+                    <input type="text" id="judul-buku" name="judul-buku" placeholder="Masukkan judul buku" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tanggal-pinjam">Tanggal Pinjam:</label>
+                    <input type="date" id="tanggal-pinjam" name="tanggal-pinjam" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Pesan Buku</button>
+            </form>
+        </div>
+
+        <!-- Form Perpanjangan -->
+        <div class="form-section extension">
+            <div class="form-header">
+                <h2>Form Perpanjangan Peminjaman Buku</h2>
+            </div>
+            <form class="extension-form">
+                <div class="form-group">
+                    <label for="kode-pinjam">Kode Peminjaman:</label>
+                    <input type="text" id="kode-pinjam" name="kode-pinjam" placeholder="Masukkan kode peminjaman" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="perpanjangan">Lama Perpanjangan:</label>
+                    <select id="perpanjangan" name="perpanjangan" required>
+                        <option value="" disabled selected>Pilih lama perpanjangan</option>
+                        <option value="7">7 Hari</option>
+                        <option value="14">14 Hari</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">Ajukan Perpanjangan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p>&copy; 2024 Perpustakaan Digital Platform. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="modul2.js"></script>
